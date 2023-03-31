@@ -31,6 +31,8 @@ namespace FeedBUFapplicatie
                 txtpassword.Clear();
                 txtusername.Focus();
             }
+
+            int x = 8;
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
