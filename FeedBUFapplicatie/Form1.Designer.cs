@@ -33,8 +33,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button_login = new System.Windows.Forms.Button();
-            this.button_clear = new System.Windows.Forms.Button();
-            this.button_exit = new System.Windows.Forms.Button();
+            this.button_register = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtusername
@@ -80,7 +79,7 @@
             // button_login
             // 
             this.button_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_login.Location = new System.Drawing.Point(87, 357);
+            this.button_login.Location = new System.Drawing.Point(87, 321);
             this.button_login.Name = "button_login";
             this.button_login.Size = new System.Drawing.Size(260, 60);
             this.button_login.TabIndex = 4;
@@ -88,27 +87,16 @@
             this.button_login.UseVisualStyleBackColor = true;
             this.button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
-            // button_clear
+            // button_register
             // 
-            this.button_clear.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_clear.Location = new System.Drawing.Point(87, 291);
-            this.button_clear.Name = "button_clear";
-            this.button_clear.Size = new System.Drawing.Size(260, 60);
-            this.button_clear.TabIndex = 5;
-            this.button_clear.Text = "Clear";
-            this.button_clear.UseVisualStyleBackColor = true;
-            this.button_clear.Click += new System.EventHandler(this.button_clear_Click);
-            // 
-            // button_exit
-            // 
-            this.button_exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_exit.Location = new System.Drawing.Point(87, 423);
-            this.button_exit.Name = "button_exit";
-            this.button_exit.Size = new System.Drawing.Size(260, 60);
-            this.button_exit.TabIndex = 6;
-            this.button_exit.Text = "Exit";
-            this.button_exit.UseVisualStyleBackColor = true;
-            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
+            this.button_register.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_register.Location = new System.Drawing.Point(87, 403);
+            this.button_register.Name = "button_register";
+            this.button_register.Size = new System.Drawing.Size(260, 60);
+            this.button_register.TabIndex = 5;
+            this.button_register.Text = "Register";
+            this.button_register.UseVisualStyleBackColor = true;
+            this.button_register.Click += new System.EventHandler(this.button_register_Click);
             // 
             // Form1
             // 
@@ -117,8 +105,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(249)))), ((int)(((byte)(254)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(456, 540);
-            this.Controls.Add(this.button_exit);
-            this.Controls.Add(this.button_clear);
+            this.Controls.Add(this.button_register);
             this.Controls.Add(this.button_login);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -139,8 +126,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button_login;
-        private System.Windows.Forms.Button button_clear;
-        private System.Windows.Forms.Button button_exit;
+        private System.Windows.Forms.Button button_register;
     }
 }
 

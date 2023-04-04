@@ -45,11 +45,10 @@ namespace FeedBUFapplicatie
 
         }
 
-        private void button_clear_Click(object sender, EventArgs e)
+        private void button_register_Click(object sender, EventArgs e)
         {
-            txtusername.Clear();
-            txtpassword.Clear();
-            txtusername.Focus();
+            new Form3().Show();
+            this.Hide();
         }
 
         private void button_exit_Click(object sender, EventArgs e)
