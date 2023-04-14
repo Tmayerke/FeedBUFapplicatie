@@ -17,7 +17,12 @@ namespace FeedBUFapplicatie
         public Form2(User user)
         {
             InitializeComponent();
+            panel_taak.Visible = false;
+            panelprf.Visible = false;
+            Text = "Weekdoelen";
             CurrentUser = user;
+           
+            
         }
 
 
@@ -99,17 +104,8 @@ namespace FeedBUFapplicatie
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            panel_taak.Visible = false;
-            panelprf.Visible = false;
-            Text = "Weekdoelen";
-
             usernamelbl.Text = CurrentUser.Username;
             rollbl.Text = CurrentUser.Role;
-        }
-
-        private void textBox_wdweek_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 
