@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -13,18 +12,15 @@ namespace FeedBUFapplicatie
 {
     public partial class Form2 : Form
     {
-        private User CurrentUser;
-        public Form2(User user)
+        public Form2()
         {
             InitializeComponent();
-            CurrentUser = user;
+            panel_taak.Visible = false;
         }
-
 
         private void button5_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
-            Hide();
+
         }
 
         private void button_weekdoelen_Click(object sender, EventArgs e)
@@ -67,50 +63,5 @@ namespace FeedBUFapplicatie
         {
             panel_taak.Visible = true;
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void profielbtn_Click(object sender, EventArgs e)
-        {
-            if (panelprf.Visible)
-                panelprf.Visible = false;
-            else panelprf.Visible = true;
-        }
-
-        
-
-        private void usernamelbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rollbl_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            panel_taak.Visible = false;
-            panelprf.Visible = false;
-            Text = "Weekdoelen";
-
-            usernamelbl.Text = CurrentUser.Username;
-            rollbl.Text = CurrentUser.Role;
-        }
-
-        private void textBox_wdweek_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
-
 }
